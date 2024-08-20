@@ -1,0 +1,40 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API para conversão de logs em um formato específico",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon src/app.ts",
+    "start:dev:ts": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest"
+  },
+  "author": "Thiago Bora",
+  "license": "ISC",
+  "dependencies": {
+    "@types/supertest": "^6.0.2",
+    "axios": "^1.7.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase": "^10.13.0",
+    "supertest": "^7.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.4.1",
+    "nodemon": "^3.1.4",
+    "ts-jest": "^29.2.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  },
+  "vitest": {
+    "setupFiles": "./vitest.setup.ts"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": []
+}
